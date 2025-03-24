@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form</title>
+    <style>
+     
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    background: #040740; 
+    color: #fff;
+    padding: 20px;
+}
+
+header .logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    background-color: #fc142b; 
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #283d39; 
+    color: white;
+}
+
+
+main {
+    padding: 20px;
+    background: #43e97b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+footer {
+    background: #263238; 
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #cceeff;
+        font-family: times new roman, sans-serif;
+        width: 60%;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <img src="logo.jpeg" alt="Department Logo" class="logo">
+        <h1>National University Of Sri Lanka (NUSL)</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>Register for Courses</h1> </main><br>
+
+
+<div>
+  
+
+   
+   <form action="/submit-form" method="post">
+       
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+
+       
+        <fieldset>
+            <legend>Academic Information</legend>
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId"><br><br>
+
+            <label for="program">Current Program of Study:</label>
+            <input type="text" id="program" name="program"><br><br>
+        </fieldset>
+
+       
+       <fieldset>
+            <legend>Select Your Course(s):</legend>
+            <label>
+                <input type="radio" name="course" value="Web Development"> Web Development
+            </label><br>
+            <label>
+                <input type="radio" name="course" value="Creative Design"> Creative Design
+            </label><br>
+            <label>
+                <input type="radio" name="course" value="UX/UI Design"> UX/UI Design
+            </label><br>
+            <label>
+                <input type="radio" name="course" value="Web Content Management"> Web Content Management
+            </label><br>
+            <label>
+                <input type="radio" name="course" value="Web Programming"> Web Programming
+            </label><br><br>
+        </fieldset>
+
+       
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="creditCard">Credit Card</option>
+                <option value="bankTransfer">Bank Transfer</option>
+                <option value="cash">Cash</option>
+            </select><br><br>
+
+            <label for="paymentRef">Payment Reference Number:</label>
+            <input type="text" id="paymentRef" name="paymentRef"><br><br>
+        </fieldset>
+
+       
+        <fieldset>
+            
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the Terms and Conditions</label><br><br>
+
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">I acknowledge the Privacy Policy</label><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form><br><br>
+
+</div>
+
+
+<footer>
+        
+       <p><i>&copy; 2025 Department of Information Technology. All rights reserved.</i></p>
+</footer>
+
+</body>
+</html>
+

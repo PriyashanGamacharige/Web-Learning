@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form</title>
+    <style>
+     
+        body {
+            background-color: lightblue;
+            font-family: times new roman, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+      
+        header {
+    background-color: #10062e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+    
+        footer {
+            background-color:#52090b;
+            color: white;
+            text-align: left;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+form {
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        width: 60%;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Department of Information Technology</h1>
+</header>
+
+
+<div>
+  
+
+    <h2 style="text-align:center;">Registration Form</h2>
+    <form action="/submit" method="post">
+        <label>First Name:</label>
+        <input type="text" id="firstname" name="firstname">
+        
+        <label>Last Name:</label>
+        <input type="text" id="lastname" name="lastname">
+        <br><br>
+
+        <label>User Name:</label>
+        <input type="text" id="Username" name="Username">
+        <br><br>
+
+        <label>Date Of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        
+        <label>Age:</label>
+        <input type="number" id="age" name="age">
+        <br><br>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email address">
+        <br><br>
+        
+        <label>Choose Your Course:</label>
+        <label for="creativeDesigning">Essential Computer Skills</label>
+        <input type="radio" id="creativeDesigning" name="AvailableCourses" value="Essential Computer Skills">
+        
+        <label for="webDevelopment">Web Development</label>
+        <input type="radio" id="webDevelopment" name="AvailableCourses" value="Web Development">
+        
+        <label for="Networking">Networking</label>
+        <input type="radio" id="Networking" name="AvailableCourses" value="Networking">
+        <br><br>
+        
+        <label>Programming Languages:</label>
+        <input type="checkbox" id="Html" name="language" value="Html">
+        <label for="Html">Html</label>
+        <input type="checkbox" id="javascript" name="language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="Css" name="language" value="Css">
+        <label for="Css">Css</label>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <br><br>
+        
+        <label for="About">About you:</label><br><br>
+        <textarea name="About" rows="4" cols="50" placeholder="Brief introduction about you."></textarea>
+        <br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br><br>
+    </form><br><br>
+
+</div>
+
+
+<footer>
+    <p><i>&copy; 2025 Department of Information Technology - All Rights Reserved.</i></p>
+</footer>
+
+</body>
+</html>
+
