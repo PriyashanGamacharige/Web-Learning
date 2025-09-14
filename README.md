@@ -17,8 +17,15 @@ It includes several web pages built with modern design practices, demonstrating 
 - Modern web design practices and techniques  
 - Organized project structure for easy learning
 
+---
+
+## 🛠️ Requirements
+- Modern web browser (Chrome, Firefox, Edge, etc.)  
+- Optional: Code editor (VS Code, Sublime Text, etc.) to view and edit the code
+
+---
 
 ## ⚙️ How to Use
 1. Clone or download the repository:  
    ```bash
-   git clone https://github.com/YourUsername/Web-Design-Projects.git
+   git clone https://github.com/PriyashanGamacharige/Web-Learning.git
